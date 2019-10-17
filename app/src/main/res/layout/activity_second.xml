@@ -50,7 +50,7 @@
             app:layout_constraintTop_toBottomOf="@+id/button" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.498"
-            android:textColor="#F8FCFBFB" android:backgroundTint="#1B96D1" android:layout_marginBottom="8dp"
+            android:textColor="#F8FCFBFB" android:backgroundTint="#542CB1F3" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
     <EditText
             android:layout_width="279dp"
