@@ -18,4 +18,9 @@
     <string name="todo4">TODO</string>
     <string name="todo5">TODO</string>
     <string name="username2">USERNAME</string>
+    <string name="name">Name</string>
+    <string name="username3">USERNAME</string>
+    <string name="username5">USERNAME</string>
+    <string name="password2">PASSWORD</string>
+    <string name="login4">LOGIN</string>
 </resources>

@@ -24,12 +24,13 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView" android:textStyle="bold" android:textSize="20sp"
             app:layout_constraintHorizontal_bias="0.567"/>
     <ImageView
-            android:layout_width="440dp"
-            android:layout_height="365dp" app:srcCompat="@android:color/holo_blue_dark"
+            android:layout_width="408dp"
+            android:layout_height="360dp" app:srcCompat="@android:color/holo_blue_dark"
             android:id="@+id/imageView3" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintHorizontal_bias="0.236" android:contentDescription="@string/todo3"/>
+            app:layout_constraintHorizontal_bias="0.538" android:contentDescription="@string/todo3"
+            android:cropToPadding="false"/>
     <Button
             android:text="@string/login_with_facebook"
             android:layout_width="298dp"
@@ -37,8 +38,10 @@
             android:id="@+id/button" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
-            android:backgroundTint="#1B96D1" android:textColor="#F3EFEF" style="r"
-            tools:layout_editor_absoluteY="541dp"/>
+            android:backgroundTint="#1B96D1" android:textColor="#FFFBFB" style="r"
+            tools:ignore="MissingConstraints" android:layout_marginBottom="116dp"
+            android:background="@drawable/custom_button"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3" android:backgroundTintMode="add"/>
     <Button
             android:text="@string/sign_up"
             android:layout_width="96dp"
@@ -47,21 +50,31 @@
             app:layout_constraintTop_toBottomOf="@+id/button" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.498"
-            android:textColor="#F8FCFBFB" android:backgroundTint="#A32196F3"/>
+            android:textColor="#F8FCFBFB" android:backgroundTint="#1B96D1" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
     <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="279dp"
+            android:layout_height="48dp"
             android:inputType="textPersonName"
+            android:text=""
             android:ems="10"
-            tools:layout_editor_absoluteY="408dp" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/editText5" android:hint="@string/username2"
-            android:textColorHint="@android:color/white" tools:ignore="MissingConstraints"/>
+            android:id="@+id/editText8" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" tools:ignore="MissingConstraints" android:autofillHints=""
+            android:layout_marginTop="36dp" app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.454" android:hint="USERNAME" android:textColorHint="#FFFBFB"
+            android:singleLine="true" android:textSize="16sp"/>
     <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="279dp"
+            android:layout_height="47dp"
             android:inputType="textPassword"
             android:ems="10"
-            tools:layout_editor_absoluteY="479dp" tools:layout_editor_absoluteX="99dp" android:id="@+id/editText7"/>
+            android:id="@+id/editText9" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editText8" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button" tools:ignore="MissingConstraints"
+            android:hint="PASSWORD" android:textColor="#141313" android:textColorHint="#F5F4F4"
+            android:textSize="16sp" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.436" app:layout_constraintVertical_bias="0.428"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
